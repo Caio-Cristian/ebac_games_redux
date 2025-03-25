@@ -20,7 +20,7 @@ const Header = () => {
       <h1>EBAC Games</h1>
       <div>
         <img src={cesta} />
-        <span>
+        <span data-testid="qtd-carrinho">
           {itens.length} itens, valor total: {paraReal(valorTotal)}
         </span>
       </div>

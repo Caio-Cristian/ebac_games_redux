@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# Resumo do Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React criada com o Create React App. Ele simula uma loja de jogos, permitindo que os usuários visualizem produtos, adicionem itens ao carrinho e interajam com uma API simulada.
 
-## Available Scripts
+## Captura de Tela
 
-In the project directory, you can run:
+![Captura de Tela do Projeto](./midia/games.png)
+
+## Funcionalidades Principais:
+
+Interface de Usuário: Desenvolvida com React, oferecendo uma experiência interativa e responsiva.
+Gerenciamento de Estado: Utiliza Redux e RTK-Query para gerenciar o estado global e realizar chamadas à API.
+API Simulada: Um servidor JSON (json-server) é usado para simular uma API REST, acessível em http://localhost:4000.
+Testes Automatizados: Inclui testes com Jest e React Testing Library para garantir a qualidade do código.
+
+## Introdução ao Create React App
+
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Inicia o aplicativo no modo de desenvolvimento.
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A página será recarregada automaticamente sempre que você fizer alterações no código.
+Você também verá mensagens de erro ou avisos no console.
+
+### `npx json-server db.json --port 4000`
+
+Inicia um servidor JSON para simular uma API.
+O servidor estará acessível em [http://localhost:4000](http://localhost:4000).
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de testes no modo interativo.
+Consulte a seção sobre [execução de testes](https://facebook.github.io/create-react-app/docs/running-tests) para mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila o aplicativo para produção na pasta `build`.
+O React é empacotado no modo de produção e os arquivos são otimizados para melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Os arquivos de saída serão minificados e terão nomes com hashes para cache eficiente.
+Seu aplicativo estará pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consulte a seção sobre [implantação](https://facebook.github.io/create-react-app/docs/deployment) para mais detalhes.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Atenção: esta é uma operação sem retorno. Após usar `eject`, não é possível desfazer!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se você não estiver satisfeito com as configurações padrão do Create React App, pode usar `eject` a qualquer momento.
+Este comando copia todos os arquivos de configuração e dependências transitivas (como Webpack, Babel e ESLint) diretamente para o projeto, permitindo controle total sobre eles.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Após ejetar, todos os scripts continuarão funcionando, mas apontarão para as configurações copiadas, que você poderá personalizar.
+No entanto, lembre-se de que essa ação deve ser usada com cautela.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Saiba Mais
 
-## Learn More
+Você pode aprender mais na [documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para aprender React, acesse a [documentação oficial do React](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+**Nota:** Este projeto também inclui um servidor JSON para simular uma API. Certifique-se de executar o comando correspondente antes de testar funcionalidades que dependem de dados dinâmicos.
